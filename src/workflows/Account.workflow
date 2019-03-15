@@ -6,7 +6,7 @@
         <criteriaItems>
             <field>Account.Favorite_Candy__c</field>
             <operation>equals</operation>
-            <value>Peanut Butter Cup</value>
+            <value>Peanut Butter Cup 2</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
