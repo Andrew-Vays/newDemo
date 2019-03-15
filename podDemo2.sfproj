@@ -1,0 +1,1351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7e451377-8792-4cb2-a080-309713282bca}</ProjectGuid>
+    <ApexVersion>44.0</ApexVersion>
+    <Name>podDemo2</Name>
+    <AssemblyName>podDemo2</AssemblyName>
+    <RootNamespace>podDemo2</RootNamespace>
+    <ProjectVersion>6</ProjectVersion>
+    <PackageVersion>1.26.4.4</PackageVersion>
+    <SyncOption>True</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="applications\" />
+    <Folder Include="appMenus\" />
+    <Folder Include="assignmentRules\" />
+    <Folder Include="autoResponseRules\" />
+    <Folder Include="cleanDataServices\" />
+    <Folder Include="communities\" />
+    <Folder Include="duplicateRules\" />
+    <Folder Include="email\" />
+    <Folder Include="email\unfiled$public\" />
+    <Folder Include="flexipages\" />
+    <Folder Include="homePageLayouts\" />
+    <Folder Include="labels\" />
+    <Folder Include="layouts\" />
+    <Folder Include="objects\" />
+    <Folder Include="profiles\" />
+    <Folder Include="quickActions\" />
+    <Folder Include="remoteSiteSettings\" />
+    <Folder Include="roles\" />
+    <Folder Include="settings\" />
+    <Folder Include="sharingRules\" />
+    <Folder Include="Soql" />
+    <Folder Include="staticresources\" />
+    <Folder Include="staticresources\TWS_Sync_Data\" />
+    <Folder Include="topicsForObjects\" />
+    <Folder Include="workflows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="applications\standard__AppLauncher.app">
+      <PhysicalRelativePath>src\applications\standard__AppLauncher.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Chatter.app">
+      <PhysicalRelativePath>src\applications\standard__Chatter.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Community.app">
+      <PhysicalRelativePath>src\applications\standard__Community.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Content.app">
+      <PhysicalRelativePath>src\applications\standard__Content.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Insights.app">
+      <PhysicalRelativePath>src\applications\standard__Insights.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__LightningBolt.app">
+      <PhysicalRelativePath>src\applications\standard__LightningBolt.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__LightningInstrumentation.app">
+      <PhysicalRelativePath>src\applications\standard__LightningInstrumentation.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__LightningSales.app">
+      <PhysicalRelativePath>src\applications\standard__LightningSales.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__LightningSalesConsole.app">
+      <PhysicalRelativePath>src\applications\standard__LightningSalesConsole.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__LightningService.app">
+      <PhysicalRelativePath>src\applications\standard__LightningService.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Marketing.app">
+      <PhysicalRelativePath>src\applications\standard__Marketing.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Platform.app">
+      <PhysicalRelativePath>src\applications\standard__Platform.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Sales.app">
+      <PhysicalRelativePath>src\applications\standard__Sales.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Service.app">
+      <PhysicalRelativePath>src\applications\standard__Service.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__ServiceConsole.app">
+      <PhysicalRelativePath>src\applications\standard__ServiceConsole.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="applications\standard__Sites.app">
+      <PhysicalRelativePath>src\applications\standard__Sites.app</PhysicalRelativePath>
+      <SubType>CustomApplication</SubType>
+    </Object>
+    <Object Include="appMenus\AppSwitcher.appMenu">
+      <PhysicalRelativePath>src\appMenus\AppSwitcher.appMenu</PhysicalRelativePath>
+      <SubType>AppMenu</SubType>
+    </Object>
+    <Object Include="appMenus\Salesforce1.appMenu">
+      <PhysicalRelativePath>src\appMenus\Salesforce1.appMenu</PhysicalRelativePath>
+      <SubType>AppMenu</SubType>
+    </Object>
+    <Object Include="assignmentRules\Case.assignmentRules">
+      <PhysicalRelativePath>src\assignmentRules\Case.assignmentRules</PhysicalRelativePath>
+      <SubType>AssignmentRules</SubType>
+    </Object>
+    <Object Include="assignmentRules\Lead.assignmentRules">
+      <PhysicalRelativePath>src\assignmentRules\Lead.assignmentRules</PhysicalRelativePath>
+      <SubType>AssignmentRules</SubType>
+    </Object>
+    <Object Include="autoResponseRules\Case.autoResponseRules">
+      <PhysicalRelativePath>src\autoResponseRules\Case.autoResponseRules</PhysicalRelativePath>
+      <SubType>AutoResponseRules</SubType>
+    </Object>
+    <Object Include="autoResponseRules\Lead.autoResponseRules">
+      <PhysicalRelativePath>src\autoResponseRules\Lead.autoResponseRules</PhysicalRelativePath>
+      <SubType>AutoResponseRules</SubType>
+    </Object>
+    <Object Include="cleanDataServices\DataCloudGeoLocation.cleanDataService">
+      <PhysicalRelativePath>src\cleanDataServices\DataCloudGeoLocation.cleanDataService</PhysicalRelativePath>
+      <SubType>CleanDataService</SubType>
+    </Object>
+    <Object Include="communities\Internal Zone.community">
+      <PhysicalRelativePath>src\communities\Internal Zone.community</PhysicalRelativePath>
+      <SubType>Community</SubType>
+    </Object>
+    <Object Include="duplicateRules\Account.Standard_Account_Duplicate_Rule.duplicateRule">
+      <PhysicalRelativePath>src\duplicateRules\Account.Standard_Account_Duplicate_Rule.duplicateRule</PhysicalRelativePath>
+      <SubType>DuplicateRule</SubType>
+    </Object>
+    <Object Include="duplicateRules\Contact.Standard_Contact_Duplicate_Rule.duplicateRule">
+      <PhysicalRelativePath>src\duplicateRules\Contact.Standard_Contact_Duplicate_Rule.duplicateRule</PhysicalRelativePath>
+      <SubType>DuplicateRule</SubType>
+    </Object>
+    <Object Include="duplicateRules\Lead.Standard_Lead_Duplicate_Rule.duplicateRule">
+      <PhysicalRelativePath>src\duplicateRules\Lead.Standard_Lead_Duplicate_Rule.duplicateRule</PhysicalRelativePath>
+      <SubType>DuplicateRule</SubType>
+    </Object>
+    <Object Include="email\unfiled$public\MarketingProductInquiryResponse.email">
+      <PhysicalRelativePath>src\email\unfiled$public\MarketingProductInquiryResponse.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SalesNewCustomerEmail.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SalesNewCustomerEmail.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportCaseAssignmentNotification.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseAssignmentNotification.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportCaseCreatedPhoneInquiries.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseCreatedPhoneInquiries.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportCaseCreatedWebInquiries.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseCreatedWebInquiries.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportCaseResponse.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseResponse.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportEscalatedCaseNotification.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportEscalatedCaseNotification.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportEscalatedCaseReassignment.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportEscalatedCaseReassignment.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportSelfServiceNewLoginandPassword.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportSelfServiceNewLoginandPassword.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SupportSelfServiceResetPassword.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportSelfServiceResetPassword.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <FolderName>unfiled$public</FolderName>
+    </Object>
+    <Object Include="flexipages\LightningSalesConsole_UtilityBar.flexipage">
+      <PhysicalRelativePath>src\flexipages\LightningSalesConsole_UtilityBar.flexipage</PhysicalRelativePath>
+      <SubType>FlexiPage</SubType>
+    </Object>
+    <Object Include="flexipages\LightningService_UtilityBar.flexipage">
+      <PhysicalRelativePath>src\flexipages\LightningService_UtilityBar.flexipage</PhysicalRelativePath>
+      <SubType>FlexiPage</SubType>
+    </Object>
+    <Object Include="homePageLayouts\DE Default.homePageLayout">
+      <PhysicalRelativePath>src\homePageLayouts\DE Default.homePageLayout</PhysicalRelativePath>
+      <SubType>HomePageLayout</SubType>
+    </Object>
+    <Object Include="labels\CustomLabels.labels">
+      <PhysicalRelativePath>src\labels\CustomLabels.labels</PhysicalRelativePath>
+      <SubType>CustomLabels</SubType>
+    </Object>
+    <Object Include="layouts\Account-Account %28Marketing%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Account-Account %28Marketing%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Account-Account %28Sales%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Account-Account %28Sales%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Account-Account %28Support%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Account-Account %28Support%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Account-Account Layout.layout">
+      <PhysicalRelativePath>src\layouts\Account-Account Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Asset-Asset Layout.layout">
+      <PhysicalRelativePath>src\layouts\Asset-Asset Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\AssetRelationship-Asset Relationship Layout.layout">
+      <PhysicalRelativePath>src\layouts\AssetRelationship-Asset Relationship Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Campaign-Campaign Layout.layout">
+      <PhysicalRelativePath>src\layouts\Campaign-Campaign Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\CampaignMember-Campaign Member Page Layout.layout">
+      <PhysicalRelativePath>src\layouts\CampaignMember-Campaign Member Page Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Case-Case %28Marketing%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Case-Case %28Marketing%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Case-Case %28Sales%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Case-Case %28Sales%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Case-Case %28Support%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Case-Case %28Support%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Case-Case Layout.layout">
+      <PhysicalRelativePath>src\layouts\Case-Case Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\CaseClose-Close Case Layout.layout">
+      <PhysicalRelativePath>src\layouts\CaseClose-Close Case Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\CommunityMemberLayout-Community Member Layout.layout">
+      <PhysicalRelativePath>src\layouts\CommunityMemberLayout-Community Member Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\ConsumptionRate-Consumption Rate Layout.layout">
+      <PhysicalRelativePath>src\layouts\ConsumptionRate-Consumption Rate Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\ConsumptionSchedule-Consumption Schedule Layout.layout">
+      <PhysicalRelativePath>src\layouts\ConsumptionSchedule-Consumption Schedule Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Contact-Contact %28Marketing%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Contact-Contact %28Marketing%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Contact-Contact %28Sales%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Contact-Contact %28Sales%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Contact-Contact %28Support%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Contact-Contact %28Support%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Contact-Contact Layout.layout">
+      <PhysicalRelativePath>src\layouts\Contact-Contact Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\ContentVersion-Content Version Layout.layout">
+      <PhysicalRelativePath>src\layouts\ContentVersion-Content Version Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Contract-Contract Layout.layout">
+      <PhysicalRelativePath>src\layouts\Contract-Contract Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\DandBCompany-D%26B Company Layout.layout">
+      <PhysicalRelativePath>src\layouts\DandBCompany-D%26B Company Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\DuplicateRecordSet-Duplicate Record Set Layout.layout">
+      <PhysicalRelativePath>src\layouts\DuplicateRecordSet-Duplicate Record Set Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\EmailMessage-Email Message Layout.layout">
+      <PhysicalRelativePath>src\layouts\EmailMessage-Email Message Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Event-Event Layout.layout">
+      <PhysicalRelativePath>src\layouts\Event-Event Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Global-Global Layout.layout">
+      <PhysicalRelativePath>src\layouts\Global-Global Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Idea-Idea Layout.layout">
+      <PhysicalRelativePath>src\layouts\Idea-Idea Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Lead-Lead %28Marketing%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Lead-Lead %28Marketing%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Lead-Lead %28Sales%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Lead-Lead %28Sales%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Lead-Lead %28Support%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Lead-Lead %28Support%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Lead-Lead Layout.layout">
+      <PhysicalRelativePath>src\layouts\Lead-Lead Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Macro-Macro Layout.layout">
+      <PhysicalRelativePath>src\layouts\Macro-Macro Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Opportunity-Opportunity %28Marketing%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Opportunity-Opportunity %28Marketing%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Opportunity-Opportunity %28Sales%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Opportunity-Opportunity %28Sales%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Opportunity-Opportunity %28Support%29 Layout.layout">
+      <PhysicalRelativePath>src\layouts\Opportunity-Opportunity %28Support%29 Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Opportunity-Opportunity Layout.layout">
+      <PhysicalRelativePath>src\layouts\Opportunity-Opportunity Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\OpportunityLineItem-Opportunity Product Layout.layout">
+      <PhysicalRelativePath>src\layouts\OpportunityLineItem-Opportunity Product Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Order-Order Layout.layout">
+      <PhysicalRelativePath>src\layouts\Order-Order Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\OrderItem-Order Product Layout.layout">
+      <PhysicalRelativePath>src\layouts\OrderItem-Order Product Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Pricebook2-Price Book Layout.layout">
+      <PhysicalRelativePath>src\layouts\Pricebook2-Price Book Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\PricebookEntry-Price Book Entry Layout.layout">
+      <PhysicalRelativePath>src\layouts\PricebookEntry-Price Book Entry Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Product2-Product Layout.layout">
+      <PhysicalRelativePath>src\layouts\Product2-Product Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\ProductConsumptionSchedule-Product Consumption Schedule Layout.layout">
+      <PhysicalRelativePath>src\layouts\ProductConsumptionSchedule-Product Consumption Schedule Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\QuickText-Quick Text Layout.layout">
+      <PhysicalRelativePath>src\layouts\QuickText-Quick Text Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Scorecard-Scorecard Layout.layout">
+      <PhysicalRelativePath>src\layouts\Scorecard-Scorecard Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\ScorecardAssociation-Scorecard Association Layout.layout">
+      <PhysicalRelativePath>src\layouts\ScorecardAssociation-Scorecard Association Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\ScorecardMetric-Scorecard Metric Layout.layout">
+      <PhysicalRelativePath>src\layouts\ScorecardMetric-Scorecard Metric Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\SocialPersona-Social Persona Layout.layout">
+      <PhysicalRelativePath>src\layouts\SocialPersona-Social Persona Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Solution-Solution Layout.layout">
+      <PhysicalRelativePath>src\layouts\Solution-Solution Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\Task-Task Layout.layout">
+      <PhysicalRelativePath>src\layouts\Task-Task Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\User-User Layout.layout">
+      <PhysicalRelativePath>src\layouts\User-User Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\UserProvAccount-User Provisioning Account Layout.layout">
+      <PhysicalRelativePath>src\layouts\UserProvAccount-User Provisioning Account Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\UserProvisioningLog-User Provisioning Log Layout.layout">
+      <PhysicalRelativePath>src\layouts\UserProvisioningLog-User Provisioning Log Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="layouts\UserProvisioningRequest-User Provisioning Request Layout.layout">
+      <PhysicalRelativePath>src\layouts\UserProvisioningRequest-User Provisioning Request Layout.layout</PhysicalRelativePath>
+      <SubType>Layout</SubType>
+    </Object>
+    <Object Include="objects\Account.object">
+      <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountCleanInfo.object">
+      <PhysicalRelativePath>src\objects\AccountCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRole.object">
+      <PhysicalRelativePath>src\objects\AccountContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Activity.object">
+      <PhysicalRelativePath>src\objects\Activity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Asset.object">
+      <PhysicalRelativePath>src\objects\Asset.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssetRelationship.object">
+      <PhysicalRelativePath>src\objects\AssetRelationship.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssistantProgress.object">
+      <PhysicalRelativePath>src\objects\AssistantProgress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Campaign.object">
+      <PhysicalRelativePath>src\objects\Campaign.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CampaignMember.object">
+      <PhysicalRelativePath>src\objects\CampaignMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Case.object">
+      <PhysicalRelativePath>src\objects\Case.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CaseContactRole.object">
+      <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChatterActivity.object">
+      <PhysicalRelativePath>src\objects\ChatterActivity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroup.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroup.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroupMember.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroupMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ConsumptionRate.object">
+      <PhysicalRelativePath>src\objects\ConsumptionRate.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ConsumptionSchedule.object">
+      <PhysicalRelativePath>src\objects\ConsumptionSchedule.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contact.object">
+      <PhysicalRelativePath>src\objects\Contact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactCleanInfo.object">
+      <PhysicalRelativePath>src\objects\ContactCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactRequest.object">
+      <PhysicalRelativePath>src\objects\ContactRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContentVersion.object">
+      <PhysicalRelativePath>src\objects\ContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contract.object">
+      <PhysicalRelativePath>src\objects\Contract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContractContactRole.object">
+      <PhysicalRelativePath>src\objects\ContractContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DandBCompany.object">
+      <PhysicalRelativePath>src\objects\DandBCompany.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordItem.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordSet.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordSet.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmailMessage.object">
+      <PhysicalRelativePath>src\objects\EmailMessage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Event.object">
+      <PhysicalRelativePath>src\objects\Event.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExchangeUserMapping.object">
+      <PhysicalRelativePath>src\objects\ExchangeUserMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FeedItem.object">
+      <PhysicalRelativePath>src\objects\FeedItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingCategoryMapping.object">
+      <PhysicalRelativePath>src\objects\ForecastingCategoryMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Idea.object">
+      <PhysicalRelativePath>src\objects\Idea.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Image.object">
+      <PhysicalRelativePath>src\objects\Image.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Lead.object">
+      <PhysicalRelativePath>src\objects\Lead.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\LeadCleanInfo.object">
+      <PhysicalRelativePath>src\objects\LeadCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Macro.object">
+      <PhysicalRelativePath>src\objects\Macro.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroAction.object">
+      <PhysicalRelativePath>src\objects\MacroAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroInstruction.object">
+      <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Opportunity.object">
+      <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityCompetitor.object">
+      <PhysicalRelativePath>src\objects\OpportunityCompetitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityContactRole.object">
+      <PhysicalRelativePath>src\objects\OpportunityContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityLineItem.object">
+      <PhysicalRelativePath>src\objects\OpportunityLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Order.object">
+      <PhysicalRelativePath>src\objects\Order.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrderItem.object">
+      <PhysicalRelativePath>src\objects\OrderItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrgDeleteRequest.object">
+      <PhysicalRelativePath>src\objects\OrgDeleteRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerRole.object">
+      <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Pricebook2.object">
+      <PhysicalRelativePath>src\objects\Pricebook2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PricebookEntry.object">
+      <PhysicalRelativePath>src\objects\PricebookEntry.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Product2.object">
+      <PhysicalRelativePath>src\objects\Product2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProductConsumptionSchedule.object">
+      <PhysicalRelativePath>src\objects\ProductConsumptionSchedule.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickText.object">
+      <PhysicalRelativePath>src\objects\QuickText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Recommendation.object">
+      <PhysicalRelativePath>src\objects\Recommendation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordAction.object">
+      <PhysicalRelativePath>src\objects\RecordAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RequestsForAccessSIQ.object">
+      <PhysicalRelativePath>src\objects\RequestsForAccessSIQ.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Scorecard.object">
+      <PhysicalRelativePath>src\objects\Scorecard.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardAssociation.object">
+      <PhysicalRelativePath>src\objects\ScorecardAssociation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardMetric.object">
+      <PhysicalRelativePath>src\objects\ScorecardMetric.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Site.object">
+      <PhysicalRelativePath>src\objects\Site.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SocialPersona.object">
+      <PhysicalRelativePath>src\objects\SocialPersona.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Solution.object">
+      <PhysicalRelativePath>src\objects\Solution.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamActivityAccess.object">
+      <PhysicalRelativePath>src\objects\StreamActivityAccess.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamingChannel.object">
+      <PhysicalRelativePath>src\objects\StreamingChannel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Task.object">
+      <PhysicalRelativePath>src\objects\Task.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Topic.object">
+      <PhysicalRelativePath>src\objects\Topic.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TopicAssignment.object">
+      <PhysicalRelativePath>src\objects\TopicAssignment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\User.object">
+      <PhysicalRelativePath>src\objects\User.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserProvisioningRequest.object">
+      <PhysicalRelativePath>src\objects\UserProvisioningRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="profiles\Admin.profile">
+      <PhysicalRelativePath>src\profiles\Admin.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Analytics Cloud Integration User.profile">
+      <PhysicalRelativePath>src\profiles\Analytics Cloud Integration User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Analytics Cloud Security User.profile">
+      <PhysicalRelativePath>src\profiles\Analytics Cloud Security User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Authenticated Website.profile">
+      <PhysicalRelativePath>src\profiles\Authenticated Website.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Chatter External User.profile">
+      <PhysicalRelativePath>src\profiles\Chatter External User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Chatter Free User.profile">
+      <PhysicalRelativePath>src\profiles\Chatter Free User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Chatter Moderator User.profile">
+      <PhysicalRelativePath>src\profiles\Chatter Moderator User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\ContractManager.profile">
+      <PhysicalRelativePath>src\profiles\ContractManager.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Cross Org Data Proxy User.profile">
+      <PhysicalRelativePath>src\profiles\Cross Org Data Proxy User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Custom%3A Marketing Profile.profile">
+      <PhysicalRelativePath>src\profiles\Custom%3A Marketing Profile.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Custom%3A Sales Profile.profile">
+      <PhysicalRelativePath>src\profiles\Custom%3A Sales Profile.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Custom%3A Support Profile.profile">
+      <PhysicalRelativePath>src\profiles\Custom%3A Support Profile.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Customer Community Login User.profile">
+      <PhysicalRelativePath>src\profiles\Customer Community Login User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Customer Community Plus Login User.profile">
+      <PhysicalRelativePath>src\profiles\Customer Community Plus Login User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Customer Community Plus User.profile">
+      <PhysicalRelativePath>src\profiles\Customer Community Plus User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Customer Community User.profile">
+      <PhysicalRelativePath>src\profiles\Customer Community User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Customer Portal Manager Custom.profile">
+      <PhysicalRelativePath>src\profiles\Customer Portal Manager Custom.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Customer Portal Manager Standard.profile">
+      <PhysicalRelativePath>src\profiles\Customer Portal Manager Standard.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\External Identity User.profile">
+      <PhysicalRelativePath>src\profiles\External Identity User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Force%2Ecom - App Subscription User.profile">
+      <PhysicalRelativePath>src\profiles\Force%2Ecom - App Subscription User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Force%2Ecom - Free User.profile">
+      <PhysicalRelativePath>src\profiles\Force%2Ecom - Free User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Gold Partner User.profile">
+      <PhysicalRelativePath>src\profiles\Gold Partner User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\High Volume Customer Portal User.profile">
+      <PhysicalRelativePath>src\profiles\High Volume Customer Portal User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\HighVolumePortal.profile">
+      <PhysicalRelativePath>src\profiles\HighVolumePortal.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Identity User.profile">
+      <PhysicalRelativePath>src\profiles\Identity User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\MarketingProfile.profile">
+      <PhysicalRelativePath>src\profiles\MarketingProfile.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Partner App Subscription User.profile">
+      <PhysicalRelativePath>src\profiles\Partner App Subscription User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Partner Community Login User.profile">
+      <PhysicalRelativePath>src\profiles\Partner Community Login User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Partner Community User.profile">
+      <PhysicalRelativePath>src\profiles\Partner Community User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\PlatformPortal.profile">
+      <PhysicalRelativePath>src\profiles\PlatformPortal.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\ReadOnly.profile">
+      <PhysicalRelativePath>src\profiles\ReadOnly.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Silver Partner User.profile">
+      <PhysicalRelativePath>src\profiles\Silver Partner User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\SolutionManager.profile">
+      <PhysicalRelativePath>src\profiles\SolutionManager.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Standard.profile">
+      <PhysicalRelativePath>src\profiles\Standard.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\StandardAul.profile">
+      <PhysicalRelativePath>src\profiles\StandardAul.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="profiles\Work%2Ecom Only User.profile">
+      <PhysicalRelativePath>src\profiles\Work%2Ecom Only User.profile</PhysicalRelativePath>
+      <SubType>Profile</SubType>
+    </Object>
+    <Object Include="quickActions\Case.LogACall.quickAction">
+      <PhysicalRelativePath>src\quickActions\Case.LogACall.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Case.NewChildCase.quickAction">
+      <PhysicalRelativePath>src\quickActions\Case.NewChildCase.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\CollaborationGroup.NewGroupMember.quickAction">
+      <PhysicalRelativePath>src\quickActions\CollaborationGroup.NewGroupMember.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\CollaborationGroup.NewGroupRecord.quickAction">
+      <PhysicalRelativePath>src\quickActions\CollaborationGroup.NewGroupRecord.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\FeedItem.NewTaskFromFeedItem.quickAction">
+      <PhysicalRelativePath>src\quickActions\FeedItem.NewTaskFromFeedItem.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\LogACall.quickAction">
+      <PhysicalRelativePath>src\quickActions\LogACall.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewAccount.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewAccount.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewCase.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewCase.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewContact.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewContact.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewEvent.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewEvent.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewGroup.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewGroup.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewLead.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewLead.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewNote.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewNote.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewOpportunity.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewOpportunity.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\NewTask.quickAction">
+      <PhysicalRelativePath>src\quickActions\NewTask.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\SendEmail.quickAction">
+      <PhysicalRelativePath>src\quickActions\SendEmail.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.Defer.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.Defer.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.Defer_0.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.Defer_0.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.EditDescription.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.EditDescription.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.EditDescription_0.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.EditDescription_0.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.UpdatePriority.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.UpdatePriority.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.UpdatePriority_0.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.UpdatePriority_0.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.UpdateStatus.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.UpdateStatus.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="quickActions\Task.UpdateStatus_0.quickAction">
+      <PhysicalRelativePath>src\quickActions\Task.UpdateStatus_0.quickAction</PhysicalRelativePath>
+      <SubType>QuickAction</SubType>
+    </Object>
+    <Object Include="remoteSiteSettings\ApexDevNet.remoteSite">
+      <PhysicalRelativePath>src\remoteSiteSettings\ApexDevNet.remoteSite</PhysicalRelativePath>
+      <SubType>RemoteSiteSetting</SubType>
+    </Object>
+    <Object Include="roles\CEO.role">
+      <PhysicalRelativePath>src\roles\CEO.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\CFO.role">
+      <PhysicalRelativePath>src\roles\CFO.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\ChannelSalesTeam.role">
+      <PhysicalRelativePath>src\roles\ChannelSalesTeam.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\COO.role">
+      <PhysicalRelativePath>src\roles\COO.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\CustomerSupportInternational.role">
+      <PhysicalRelativePath>src\roles\CustomerSupportInternational.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\CustomerSupportNorthAmerica.role">
+      <PhysicalRelativePath>src\roles\CustomerSupportNorthAmerica.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\DirectorChannelSales.role">
+      <PhysicalRelativePath>src\roles\DirectorChannelSales.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\DirectorDirectSales.role">
+      <PhysicalRelativePath>src\roles\DirectorDirectSales.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\EasternSalesTeam.role">
+      <PhysicalRelativePath>src\roles\EasternSalesTeam.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\InstallationRepairServices.role">
+      <PhysicalRelativePath>src\roles\InstallationRepairServices.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\MarketingTeam.role">
+      <PhysicalRelativePath>src\roles\MarketingTeam.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\SVPCustomerServiceSupport.role">
+      <PhysicalRelativePath>src\roles\SVPCustomerServiceSupport.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\SVPHumanResources.role">
+      <PhysicalRelativePath>src\roles\SVPHumanResources.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\SVPSalesMarketing.role">
+      <PhysicalRelativePath>src\roles\SVPSalesMarketing.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\VPInternationalSales.role">
+      <PhysicalRelativePath>src\roles\VPInternationalSales.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\VPMarketing.role">
+      <PhysicalRelativePath>src\roles\VPMarketing.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\VPNorthAmericanSales.role">
+      <PhysicalRelativePath>src\roles\VPNorthAmericanSales.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="roles\WesternSalesTeam.role">
+      <PhysicalRelativePath>src\roles\WesternSalesTeam.role</PhysicalRelativePath>
+      <SubType>Role</SubType>
+    </Object>
+    <Object Include="settings\Account.settings">
+      <PhysicalRelativePath>src\settings\Account.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Activities.settings">
+      <PhysicalRelativePath>src\settings\Activities.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Address.settings">
+      <PhysicalRelativePath>src\settings\Address.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\BusinessHours.settings">
+      <PhysicalRelativePath>src\settings\BusinessHours.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Case.settings">
+      <PhysicalRelativePath>src\settings\Case.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Company.settings">
+      <PhysicalRelativePath>src\settings\Company.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Contract.settings">
+      <PhysicalRelativePath>src\settings\Contract.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Entitlement.settings">
+      <PhysicalRelativePath>src\settings\Entitlement.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\FieldService.settings">
+      <PhysicalRelativePath>src\settings\FieldService.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\FileUploadAndDownloadSecurity.settings">
+      <PhysicalRelativePath>src\settings\FileUploadAndDownloadSecurity.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Forecasting.settings">
+      <PhysicalRelativePath>src\settings\Forecasting.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Ideas.settings">
+      <PhysicalRelativePath>src\settings\Ideas.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\IoT.settings">
+      <PhysicalRelativePath>src\settings\IoT.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Knowledge.settings">
+      <PhysicalRelativePath>src\settings\Knowledge.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\LiveAgent.settings">
+      <PhysicalRelativePath>src\settings\LiveAgent.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Macro.settings">
+      <PhysicalRelativePath>src\settings\Macro.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Mobile.settings">
+      <PhysicalRelativePath>src\settings\Mobile.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Name.settings">
+      <PhysicalRelativePath>src\settings\Name.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\OmniChannel.settings">
+      <PhysicalRelativePath>src\settings\OmniChannel.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Opportunity.settings">
+      <PhysicalRelativePath>src\settings\Opportunity.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Order.settings">
+      <PhysicalRelativePath>src\settings\Order.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\OrgPreference.settings">
+      <PhysicalRelativePath>src\settings\OrgPreference.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\PathAssistant.settings">
+      <PhysicalRelativePath>src\settings\PathAssistant.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Product.settings">
+      <PhysicalRelativePath>src\settings\Product.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Quote.settings">
+      <PhysicalRelativePath>src\settings\Quote.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Search.settings">
+      <PhysicalRelativePath>src\settings\Search.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="settings\Security.settings">
+      <PhysicalRelativePath>src\settings\Security.settings</PhysicalRelativePath>
+      <SubType>Settings</SubType>
+    </Object>
+    <Object Include="sharingRules\Account.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Account.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Asset.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Asset.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Campaign.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Campaign.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Case.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Case.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Contact.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Contact.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\FlowInterview.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\FlowInterview.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Lead.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Lead.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\ListEmail.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\ListEmail.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Opportunity.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Opportunity.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\Order.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\Order.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="sharingRules\User.sharingRules">
+      <PhysicalRelativePath>src\sharingRules\User.sharingRules</PhysicalRelativePath>
+      <SubType>SharingRules</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Account.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Account.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Asset.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Asset.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Campaign.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Campaign.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Case.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Case.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Contact.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Contact.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\ContentDocument.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\ContentDocument.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Contract.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Contract.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Event.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Event.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Lead.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Lead.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Opportunity.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Opportunity.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Order.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Order.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Solution.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Solution.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="topicsForObjects\Task.topicsForObjects">
+      <PhysicalRelativePath>src\topicsForObjects\Task.topicsForObjects</PhysicalRelativePath>
+      <SubType>TopicsForObjects</SubType>
+    </Object>
+    <Object Include="workflows\Account.workflow">
+      <PhysicalRelativePath>src\workflows\Account.workflow</PhysicalRelativePath>
+      <SubType>Workflow</SubType>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZip Include="staticresources\TWS_Sync_Data">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZipItem Include="staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd">
+      <PhysicalRelativePath>resource-bundles\TWS_Sync_Data\TWS_Sync_Data.twssd</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>TWS_Sync_Data</StaticResource>
+      <StaticResourcePath>staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd</StaticResourcePath>
+    </StaticZipItem>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="email\unfiled$public\MarketingProductInquiryResponse.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\MarketingProductInquiryResponse.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\MarketingProductInquiryResponse.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SalesNewCustomerEmail.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SalesNewCustomerEmail.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SalesNewCustomerEmail.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportCaseAssignmentNotification.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseAssignmentNotification.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportCaseAssignmentNotification.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportCaseCreatedPhoneInquiries.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseCreatedPhoneInquiries.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportCaseCreatedPhoneInquiries.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportCaseCreatedWebInquiries.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseCreatedWebInquiries.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportCaseCreatedWebInquiries.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportCaseResponse.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportCaseResponse.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportCaseResponse.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportEscalatedCaseNotification.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportEscalatedCaseNotification.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportEscalatedCaseNotification.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportEscalatedCaseReassignment.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportEscalatedCaseReassignment.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportEscalatedCaseReassignment.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportSelfServiceNewLoginandPassword.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportSelfServiceNewLoginandPassword.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportSelfServiceNewLoginandPassword.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SupportSelfServiceResetPassword.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SupportSelfServiceResetPassword.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SupportSelfServiceResetPassword.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>
